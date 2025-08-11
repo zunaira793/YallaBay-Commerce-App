@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "437882504807",
+    "project_id": "eclassify-3f636",
+    "storage_bucket": "eclassify-3f636.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437882504807:android:2bf0badb1c21a72d0576c2",
+        "android_client_info": {
+          "package_name": "com.eclassify.wrteam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKM-P3oiwtNozzEe6Q44TEGZrMf-jF4h4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

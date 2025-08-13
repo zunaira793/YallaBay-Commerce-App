@@ -1,6 +1,7 @@
 
 
-import 'package:eClassify/utils/api.dart';
+
+import 'package:YallaBay/utils/api.dart';
 
 class Type {
   String? id;

@@ -1,6 +1,7 @@
-import 'package:eClassify/data/model/data_output.dart';
-import 'package:eClassify/data/model/location/free_api_location_model.dart';
-import 'package:eClassify/utils/api.dart';
+
+import 'package:YallaBay/data/model/data_output.dart';
+import 'package:YallaBay/data/model/location/free_api_location_model.dart';
+import 'package:YallaBay/utils/api.dart';
 
 class FreeApiLocationRepository {
   Future<DataOutput<FreeAPILocationModel>> fetchLocations({

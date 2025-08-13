@@ -1,5 +1,6 @@
-﻿import 'package:eClassify/data/model/verification_request_model.dart';
-import 'package:eClassify/data/repositories/seller/seller_verification_field_repository.dart';
+﻿
+import 'package:YallaBay/data/model/verification_request_model.dart';
+import 'package:YallaBay/data/repositories/seller/seller_verification_field_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 abstract class FetchVerificationRequestState {}

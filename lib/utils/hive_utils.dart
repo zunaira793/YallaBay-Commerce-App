@@ -1,9 +1,10 @@
-import 'package:eClassify/app/app_theme.dart';
-import 'package:eClassify/app/routes.dart';
-import 'package:eClassify/data/model/user_model.dart';
-import 'package:eClassify/utils/constant.dart';
-import 'package:eClassify/utils/helper_utils.dart';
-import 'package:eClassify/utils/hive_keys.dart';
+
+import 'package:YallaBay/app/app_theme.dart';
+import 'package:YallaBay/app/routes.dart';
+import 'package:YallaBay/data/model/user_model.dart';
+import 'package:YallaBay/utils/constant.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
+import 'package:YallaBay/utils/hive_keys.dart';
 import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
 

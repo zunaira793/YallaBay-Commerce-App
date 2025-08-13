@@ -1,14 +1,13 @@
+import 'package:YallaBay/data/cubits/chat/delete_message_cubit.dart';
+import 'package:YallaBay/data/cubits/chat/load_chat_messages.dart';
+import 'package:YallaBay/ui/screens/chat/chat_screen.dart';
+import 'package:YallaBay/utils/app_icon.dart';
+import 'package:YallaBay/utils/notification/notification_service.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:eClassify/data/cubits/chat/delete_message_cubit.dart';
-import 'package:eClassify/data/cubits/chat/load_chat_messages.dart';
-import 'package:eClassify/ui/screens/chat/chat_screen.dart';
-
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/app_icon.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/notification/notification_service.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';

@@ -1,10 +1,9 @@
-import 'package:eClassify/ui/screens/item/my_item_tab_screen.dart';
-
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/constant.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+import 'package:YallaBay/ui/screens/item/my_item_tab_screen.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/constant.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 
 String selectItemStatus = "";

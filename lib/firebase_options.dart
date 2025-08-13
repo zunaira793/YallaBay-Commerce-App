@@ -50,20 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDKM-P3oiwtNozzEe6Q44TEGZrMf-jF4h4',
-    appId: '1:437882504807:android:2bf0badb1c21a72d0576c2',
-    messagingSenderId: '437882504807',
-    projectId: 'eclassify-3f636',
-    storageBucket: 'eclassify-3f636.firebasestorage.app',
+    apiKey: 'AIzaSyB26w33FX2bdn96boXSuZMBnrFXnxz2n7g',
+    appId: '1:1042331020379:android:799901e4240773da92637e',
+    messagingSenderId: '1042331020379',
+    projectId: 'yallabay-4e4b1',
+    storageBucket: 'yallabay-4e4b1.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAYVNo8sHaxugIW7imS8j-IO9Qn9qp0eT8',
-    appId: '1:437882504807:ios:9a8dda840aaa60ea0576c2',
-    messagingSenderId: '',
-    projectId: '437882504807',
-    storageBucket: 'eclassify-3f636.firebasestorage.app',
-    iosBundleId: 'com.eclassify.wrteam',
+    apiKey: 'AIzaSyAVUiHSHYLt6BLyoCaRTGfjWTWxGq_beVA',
+    appId: '1:1042331020379:ios:5d919064e62684bb92637e',
+    messagingSenderId: '1042331020379',
+    projectId: 'yallabay-4e4b1',
+    storageBucket: 'yallabay-4e4b1.firebasestorage.app',
+    iosBundleId: 'com.yallabay.marketplace',
   );
 
 }

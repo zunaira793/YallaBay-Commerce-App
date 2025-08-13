@@ -1,4 +1,4 @@
-package com.eclassify.wrteam
+package com.yallabay.marketplace
 
 
 import io.flutter.embedding.android.FlutterActivity

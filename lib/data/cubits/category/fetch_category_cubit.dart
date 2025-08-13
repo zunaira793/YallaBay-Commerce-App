@@ -1,11 +1,10 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
 import 'dart:convert';
-
-import 'package:eClassify/data/model/category_model.dart';
-import 'package:eClassify/data/model/data_output.dart';
-import 'package:eClassify/data/repositories/category_repository.dart';
-import 'package:eClassify/utils/helper_utils.dart';
+import 'package:YallaBay/data/model/category_model.dart';
+import 'package:YallaBay/data/model/data_output.dart';
+import 'package:YallaBay/data/repositories/category_repository.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 abstract class FetchCategoryState {}

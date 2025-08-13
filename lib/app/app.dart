@@ -1,8 +1,9 @@
-import 'package:eClassify/data/model/personalized/personalized_settings.dart';
-import 'package:eClassify/firebase_options.dart';
-import 'package:eClassify/main.dart';
-import 'package:eClassify/ui/screens/widgets/errors/something_went_wrong.dart';
-import 'package:eClassify/utils/hive_keys.dart';
+
+import 'package:YallaBay/data/model/personalized/personalized_settings.dart';
+import 'package:YallaBay/firebase_options.dart';
+import 'package:YallaBay/main.dart';
+import 'package:YallaBay/ui/screens/widgets/errors/something_went_wrong.dart';
+import 'package:YallaBay/utils/hive_keys.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

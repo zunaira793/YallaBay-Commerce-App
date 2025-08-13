@@ -1,13 +1,14 @@
-import 'package:eClassify/app/routes.dart';
-import 'package:eClassify/data/cubits/home/fetch_home_all_items_cubit.dart';
-import 'package:eClassify/data/cubits/home/fetch_home_screen_cubit.dart';
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/app_icon.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/helper_utils.dart';
-import 'package:eClassify/utils/hive_utils.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+
+import 'package:YallaBay/app/routes.dart';
+import 'package:YallaBay/data/cubits/home/fetch_home_all_items_cubit.dart';
+import 'package:YallaBay/data/cubits/home/fetch_home_screen_cubit.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/app_icon.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
+import 'package:YallaBay/utils/hive_utils.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shimmer/shimmer.dart';

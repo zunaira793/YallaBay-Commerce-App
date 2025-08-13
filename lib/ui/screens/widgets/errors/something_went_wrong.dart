@@ -1,9 +1,10 @@
-import 'package:eClassify/ui/screens/home/home_screen.dart';
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/app_icon.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+
+import 'package:YallaBay/ui/screens/home/home_screen.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/app_icon.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 
 class SomethingWentWrong extends StatelessWidget {
@@ -38,7 +39,7 @@ class NoChatFound extends StatelessWidget {
             height: 20,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: sidePadding),
+            padding: EdgeInsets.symmetric(horizontal: sidePadding),
             child: CustomText(
               "${"noChatFoundStartNewConversation".translate(context)}",
               fontSize: context.font.larger,

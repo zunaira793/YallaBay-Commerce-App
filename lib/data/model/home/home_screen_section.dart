@@ -1,4 +1,5 @@
-import 'package:eClassify/data/model/item/item_model.dart';
+
+import 'package:YallaBay/data/model/item/item_model.dart';
 
 class HomeScreenSection {
   int? sectionId;

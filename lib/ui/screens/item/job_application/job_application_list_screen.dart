@@ -1,17 +1,19 @@
-import 'package:eClassify/data/cubits/item/job_application/change_job_application_status_cubit.dart';
-import 'package:eClassify/data/cubits/item/job_application/fetch_job_application_cubit.dart';
-import 'package:eClassify/data/model/item/job_application.dart';
-import 'package:eClassify/ui/screens/chat/chat_audio/widgets/chat_widget.dart';
-import 'package:eClassify/ui/screens/home/home_screen.dart';
-import 'package:eClassify/ui/screens/widgets/errors/no_data_found.dart';
-import 'package:eClassify/ui/screens/widgets/errors/no_internet.dart';
-import 'package:eClassify/ui/screens/widgets/errors/something_went_wrong.dart';
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/api.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/helper_utils.dart';
-import 'package:eClassify/utils/hive_utils.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+import 'package:YallaBay/data/cubits/item/job_application/change_job_application_status_cubit.dart';
+import 'package:YallaBay/data/cubits/item/job_application/fetch_job_application_cubit.dart';
+import 'package:YallaBay/data/model/item/job_application.dart';
+import 'package:YallaBay/ui/screens/chat/chat_audio/widgets/chat_widget.dart';
+import 'package:YallaBay/ui/screens/home/home_screen.dart';
+import 'package:YallaBay/ui/screens/widgets/errors/no_data_found.dart';
+import 'package:YallaBay/ui/screens/widgets/errors/no_internet.dart';
+import 'package:YallaBay/ui/screens/widgets/errors/something_went_wrong.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/api.dart';
+import 'package:YallaBay/utils/constant.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
+import 'package:YallaBay/utils/hive_utils.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -152,7 +154,7 @@ class _JobApplicationListScreenState extends State<JobApplicationListScreen> {
                     child: ListView.builder(
                       shrinkWrap: true,
                       controller: _pageScrollController,
-                      padding: const EdgeInsets.symmetric(
+                      padding: EdgeInsets.symmetric(
                         horizontal: sidePadding,
                         vertical: 8,
                       ),

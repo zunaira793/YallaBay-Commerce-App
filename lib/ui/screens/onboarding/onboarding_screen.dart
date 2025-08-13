@@ -1,14 +1,15 @@
-import 'package:eClassify/app/app_theme.dart';
-import 'package:eClassify/app/routes.dart';
-import 'package:eClassify/data/cubits/system/app_theme_cubit.dart';
-import 'package:eClassify/data/cubits/system/fetch_system_settings_cubit.dart';
-import 'package:eClassify/data/model/system_settings_model.dart';
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/hive_keys.dart';
-import 'package:eClassify/utils/hive_utils.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+
+import 'package:YallaBay/app/app_theme.dart';
+import 'package:YallaBay/app/routes.dart';
+import 'package:YallaBay/data/cubits/system/app_theme_cubit.dart';
+import 'package:YallaBay/data/cubits/system/fetch_system_settings_cubit.dart';
+import 'package:YallaBay/data/model/system_settings_model.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/hive_keys.dart';
+import 'package:YallaBay/utils/hive_utils.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

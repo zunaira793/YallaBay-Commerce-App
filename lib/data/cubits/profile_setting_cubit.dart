@@ -1,7 +1,8 @@
-import 'package:eClassify/data/helper/custom_exception.dart';
-import 'package:eClassify/settings.dart';
-import 'package:eClassify/utils/api.dart';
-import 'package:eClassify/utils/constant.dart';
+
+import 'package:YallaBay/data/helper/custom_exception.dart';
+import 'package:YallaBay/settings.dart';
+import 'package:YallaBay/utils/api.dart';
+import 'package:YallaBay/utils/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -43,7 +44,7 @@ class ProfileSettingCubit extends Cubit<ProfileSettingState> {
     if (forceRefresh != true) {
       if (state is ProfileSettingFetchSuccess) {
         await Future.delayed(
-            const Duration(seconds: AppSettings.hiddenAPIProcessDelay));
+            Duration(seconds: AppSettings.hiddenAPIProcessDelay));
       } else {
         emit(ProfileSettingFetchProgress());
       }

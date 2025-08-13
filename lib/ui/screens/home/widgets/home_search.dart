@@ -1,9 +1,10 @@
-import 'package:eClassify/app/routes.dart';
-import 'package:eClassify/ui/screens/home/home_screen.dart';
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/app_icon.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+import 'package:YallaBay/app/routes.dart';
+import 'package:YallaBay/ui/screens/home/home_screen.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/app_icon.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 
 class HomeSearchField extends StatelessWidget {
@@ -28,7 +29,7 @@ class HomeSearchField extends StatelessWidget {
       child: AbsorbPointer(
         absorbing: true,
         child: Container(
-            margin: const EdgeInsets.symmetric(
+            margin:  EdgeInsets.symmetric(
                 horizontal: sidePadding, vertical: 15),
             width: context.screenWidth,
             height: 56,

@@ -1,6 +1,8 @@
-import 'package:eClassify/data/model/data_output.dart';
-import 'package:eClassify/data/model/faqs_model.dart';
-import 'package:eClassify/utils/api.dart';
+
+
+import 'package:YallaBay/data/model/data_output.dart';
+import 'package:YallaBay/data/model/faqs_model.dart';
+import 'package:YallaBay/utils/api.dart';
 
 class FaqsRepository {
   Future<DataOutput<FaqsModel>> fetchFaqs({required int page}) async {

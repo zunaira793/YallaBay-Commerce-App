@@ -1,9 +1,10 @@
 import 'dart:io';
 
+import 'package:YallaBay/data/model/data_output.dart';
+import 'package:YallaBay/data/model/item/job_application.dart';
+import 'package:YallaBay/utils/api.dart';
 import 'package:dio/dio.dart';
-import 'package:eClassify/data/model/data_output.dart';
-import 'package:eClassify/data/model/item/job_application.dart';
-import 'package:eClassify/utils/api.dart';
+
 import 'package:path/path.dart' as path;
 
 class JobRepository {

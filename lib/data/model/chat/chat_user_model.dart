@@ -1,6 +1,7 @@
 
 
-import 'package:eClassify/data/model/seller_ratings_model.dart';
+
+import 'package:YallaBay/data/model/seller_ratings_model.dart';
 
 class ChatUser {
   int? id;

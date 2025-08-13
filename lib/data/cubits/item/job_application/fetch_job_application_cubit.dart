@@ -1,8 +1,8 @@
 import 'dart:developer';
 
-import 'package:eClassify/data/model/data_output.dart';
-import 'package:eClassify/data/model/item/job_application.dart';
-import 'package:eClassify/data/repositories/item/job_repository.dart';
+import 'package:YallaBay/data/model/data_output.dart';
+import 'package:YallaBay/data/model/item/job_application.dart';
+import 'package:YallaBay/data/repositories/item/job_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class FetchJobApplicationState {}

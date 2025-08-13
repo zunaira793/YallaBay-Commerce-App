@@ -1,14 +1,15 @@
-import 'package:eClassify/data/model/category_model.dart';
-import 'package:eClassify/data/model/item_filter_model.dart';
-import 'package:eClassify/data/model/system_settings_model.dart';
-import 'package:eClassify/settings.dart';
-import 'package:eClassify/ui/screens/filter_screen.dart';
+
+import 'package:YallaBay/data/model/category_model.dart';
+import 'package:YallaBay/data/model/item_filter_model.dart';
+import 'package:YallaBay/data/model/system_settings_model.dart';
+import 'package:YallaBay/settings.dart';
+import 'package:YallaBay/ui/screens/filter_screen.dart';
 import 'package:flutter/material.dart';
 
 const String svgPath = 'assets/svg/';
 
 class Constant {
-  static const String appName = AppSettings.applicationName;
+  static final String appName = AppSettings.applicationName;
   static const String packageName = AppSettings.packageName;
   static String playstoreURLAndroid = "";
   static String appstoreURLios = "";

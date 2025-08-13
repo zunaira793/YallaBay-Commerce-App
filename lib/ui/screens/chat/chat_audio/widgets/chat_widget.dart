@@ -1,18 +1,18 @@
 // ignore_for_file: invalid_use_of_protected_member, invalid_use_of_visible_for_testing_member
 
+import 'package:YallaBay/app/app_theme.dart';
+import 'package:YallaBay/data/cubits/chat/send_message.dart';
+import 'package:YallaBay/data/cubits/system/app_theme_cubit.dart';
+import 'package:YallaBay/ui/screens/chat/chat_screen.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
+import 'package:YallaBay/utils/hive_utils.dart';
 import 'package:any_link_preview/any_link_preview.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:dio/dio.dart';
-import 'package:eClassify/app/app_theme.dart';
-import 'package:eClassify/data/cubits/chat/send_message.dart';
-import 'package:eClassify/data/cubits/system/app_theme_cubit.dart';
-import 'package:eClassify/ui/screens/chat/chat_screen.dart';
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/helper_utils.dart';
-import 'package:eClassify/utils/hive_utils.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

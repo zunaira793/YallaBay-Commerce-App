@@ -1,15 +1,15 @@
+import 'package:YallaBay/app/app.dart';
+import 'package:YallaBay/app/app_localization.dart';
+import 'package:YallaBay/app/app_theme.dart';
+import 'package:YallaBay/app/register_cubits.dart';
+import 'package:YallaBay/app/routes.dart';
+import 'package:YallaBay/data/cubits/system/app_theme_cubit.dart';
+import 'package:YallaBay/data/cubits/system/language_cubit.dart';
+import 'package:YallaBay/ui/screens/chat/chat_audio/globals.dart';
+import 'package:YallaBay/utils/constant.dart';
+import 'package:YallaBay/utils/hive_utils.dart';
+import 'package:YallaBay/utils/notification/notification_service.dart';
 import 'package:device_preview/device_preview.dart';
-import 'package:eClassify/app/app.dart';
-import 'package:eClassify/app/app_localization.dart';
-import 'package:eClassify/app/app_theme.dart';
-import 'package:eClassify/app/register_cubits.dart';
-import 'package:eClassify/app/routes.dart';
-import 'package:eClassify/data/cubits/system/app_theme_cubit.dart';
-import 'package:eClassify/data/cubits/system/language_cubit.dart';
-import 'package:eClassify/ui/screens/chat/chat_audio/globals.dart';
-import 'package:eClassify/utils/constant.dart';
-import 'package:eClassify/utils/hive_utils.dart';
-import 'package:eClassify/utils/notification/notification_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -99,7 +99,7 @@ class _AppState extends State<App> {
               ),
             );
           },
-          localizationsDelegates: const [
+          localizationsDelegates: [
             AppLocalization.delegate,
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,

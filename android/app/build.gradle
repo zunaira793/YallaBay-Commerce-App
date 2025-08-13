@@ -37,7 +37,7 @@ if (keystorePropertiesFile.exists()) {
 
 
 android {
-    namespace "com.eclassify.wrteam"
+    namespace "com.yallabay.marketplace"
     compileSdkVersion 35
 
     compileOptions {
@@ -59,7 +59,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.eclassify.wrteam"
+        applicationId "com.yallabay.marketplace"
         minSdkVersion 24
         targetSdkVersion 35
         multiDexEnabled true

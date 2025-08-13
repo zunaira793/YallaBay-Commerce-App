@@ -1,4 +1,5 @@
-import 'package:eClassify/utils/api.dart';
+
+import 'package:YallaBay/utils/api.dart';
 
 class PaidApiLocationRepository {
   Future<Map<String, dynamic>> fetchPredictionResults({

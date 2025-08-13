@@ -1,5 +1,6 @@
-import 'package:eClassify/data/model/custom_field/custom_field_model.dart';
-import 'package:eClassify/data/repositories/custom_fields_repository.dart';
+
+import 'package:YallaBay/data/model/custom_field/custom_field_model.dart';
+import 'package:YallaBay/data/repositories/custom_fields_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 abstract class FetchCustomFieldState {}

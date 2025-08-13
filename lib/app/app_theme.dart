@@ -1,6 +1,6 @@
 
 
-import 'package:eClassify/ui/theme/theme.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 enum AppTheme { dark, light }
@@ -10,7 +10,7 @@ final appThemeData = {
     brightness: Brightness.light,
     useMaterial3: false,
     fontFamily: "Manrope",
-    textSelectionTheme: const TextSelectionThemeData(
+    textSelectionTheme: TextSelectionThemeData(
       selectionColor: territoryColor_,
       cursorColor: territoryColor_,
       selectionHandleColor: territoryColor_,

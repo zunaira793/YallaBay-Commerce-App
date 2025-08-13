@@ -1,5 +1,6 @@
-import 'package:eClassify/ui/screens/home/home_screen.dart';
-import 'package:eClassify/utils/custom_silver_grid_delegate.dart';
+
+import 'package:YallaBay/ui/screens/home/home_screen.dart';
+import 'package:YallaBay/utils/custom_silver_grid_delegate.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

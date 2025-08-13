@@ -1,24 +1,23 @@
 import 'dart:async';
 
-import 'package:eClassify/app/app_theme.dart';
-import 'package:eClassify/app/routes.dart';
-import 'package:eClassify/data/cubits/location/fetch_areas_cubit.dart';
-import 'package:eClassify/data/cubits/location/fetch_cities_cubit.dart';
-import 'package:eClassify/data/cubits/system/app_theme_cubit.dart';
-import 'package:eClassify/data/model/location/city_model.dart';
-import 'package:eClassify/ui/screens/location/locationHelperWidget.dart';
-
-import 'package:eClassify/ui/screens/widgets/errors/no_data_found.dart';
-import 'package:eClassify/ui/screens/widgets/errors/no_internet.dart';
-import 'package:eClassify/ui/screens/widgets/errors/something_went_wrong.dart';
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/api.dart';
-import 'package:eClassify/utils/app_icon.dart';
-import 'package:eClassify/utils/cloud_state/cloud_state.dart';
-import 'package:eClassify/utils/constant.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+import 'package:YallaBay/app/app_theme.dart';
+import 'package:YallaBay/app/routes.dart';
+import 'package:YallaBay/data/cubits/location/fetch_areas_cubit.dart';
+import 'package:YallaBay/data/cubits/location/fetch_cities_cubit.dart';
+import 'package:YallaBay/data/cubits/system/app_theme_cubit.dart';
+import 'package:YallaBay/data/model/location/city_model.dart';
+import 'package:YallaBay/ui/screens/location/locationHelperWidget.dart';
+import 'package:YallaBay/ui/screens/widgets/errors/no_data_found.dart';
+import 'package:YallaBay/ui/screens/widgets/errors/no_internet.dart';
+import 'package:YallaBay/ui/screens/widgets/errors/something_went_wrong.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/api.dart';
+import 'package:YallaBay/utils/app_icon.dart';
+import 'package:YallaBay/utils/cloud_state/cloud_state.dart';
+import 'package:YallaBay/utils/constant.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

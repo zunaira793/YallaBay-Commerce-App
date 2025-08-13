@@ -1,5 +1,5 @@
+import 'package:YallaBay/utils/extensions/extensions.dart';
 import 'package:dio/dio.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 
 class Validator {

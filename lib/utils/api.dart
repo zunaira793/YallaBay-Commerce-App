@@ -1,17 +1,18 @@
 import 'dart:io';
 
+import 'package:YallaBay/data/cubits/chat/blocked_users_list_cubit.dart';
+import 'package:YallaBay/data/cubits/chat/get_buyer_chat_users_cubit.dart';
+import 'package:YallaBay/data/cubits/favorite/favorite_cubit.dart';
+import 'package:YallaBay/data/cubits/item/job_application/fetch_job_application_cubit.dart';
+import 'package:YallaBay/data/cubits/report/update_report_items_list_cubit.dart';
+import 'package:YallaBay/data/cubits/system/user_details.dart';
+import 'package:YallaBay/utils/constant.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
+import 'package:YallaBay/utils/hive_utils.dart';
+import 'package:YallaBay/utils/network_request_interseptor.dart';
 import 'package:dio/dio.dart';
-import 'package:eClassify/data/cubits/chat/blocked_users_list_cubit.dart';
-import 'package:eClassify/data/cubits/chat/get_buyer_chat_users_cubit.dart';
-import 'package:eClassify/data/cubits/favorite/favorite_cubit.dart';
-import 'package:eClassify/data/cubits/item/job_application/fetch_job_application_cubit.dart';
-import 'package:eClassify/data/cubits/report/update_report_items_list_cubit.dart';
-import 'package:eClassify/data/cubits/system/user_details.dart';
-import 'package:eClassify/utils/constant.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/helper_utils.dart';
-import 'package:eClassify/utils/hive_utils.dart';
-import 'package:eClassify/utils/network_request_interseptor.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ApiException implements Exception {

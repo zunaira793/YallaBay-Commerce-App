@@ -1,8 +1,9 @@
-import 'package:eClassify/data/model/system_settings_model.dart';
-import 'package:eClassify/data/repositories/system_repository.dart';
-import 'package:eClassify/settings.dart';
-import 'package:eClassify/utils/constant.dart';
-import 'package:eClassify/utils/network/network_availability.dart';
+
+import 'package:YallaBay/data/model/system_settings_model.dart';
+import 'package:YallaBay/data/repositories/system_repository.dart';
+import 'package:YallaBay/settings.dart';
+import 'package:YallaBay/utils/constant.dart';
+import 'package:YallaBay/utils/network/network_availability.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 abstract class FetchSystemSettingsState {}
@@ -46,7 +47,7 @@ class FetchSystemSettingsCubit extends Cubit<FetchSystemSettingsState> {
       if (forceRefresh != true) {
         if (state is FetchSystemSettingsSuccess) {
           await Future.delayed(
-              const Duration(seconds: AppSettings.hiddenAPIProcessDelay));
+              Duration(seconds: AppSettings.hiddenAPIProcessDelay));
         } else {
           emit(FetchSystemSettingsInProgress());
         }

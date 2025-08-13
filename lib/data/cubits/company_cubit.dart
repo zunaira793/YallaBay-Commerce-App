@@ -1,6 +1,7 @@
-import 'package:eClassify/data/helper/custom_exception.dart';
-import 'package:eClassify/data/model/company.dart';
-import 'package:eClassify/utils/api.dart';
+
+import 'package:YallaBay/data/helper/custom_exception.dart';
+import 'package:YallaBay/data/model/company.dart';
+import 'package:YallaBay/utils/api.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

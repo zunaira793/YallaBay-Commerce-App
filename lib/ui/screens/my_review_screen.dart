@@ -1,21 +1,21 @@
 import 'dart:ui' as ui;
 
+import 'package:YallaBay/data/cubits/fetch_my_reviews_cubit.dart';
+import 'package:YallaBay/data/cubits/my_item_review_report_cubit.dart';
+import 'package:YallaBay/data/helper/widgets.dart';
+import 'package:YallaBay/data/model/my_review_model.dart';
+import 'package:YallaBay/ui/screens/home/home_screen.dart';
+import 'package:YallaBay/ui/screens/widgets/errors/no_data_found.dart';
+import 'package:YallaBay/ui/screens/widgets/shimmerLoadingContainer.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/app_icon.dart';
+import 'package:YallaBay/utils/custom_hero_animation.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:eClassify/data/cubits/fetch_my_reviews_cubit.dart';
-import 'package:eClassify/data/cubits/my_item_review_report_cubit.dart';
-import 'package:eClassify/data/helper/widgets.dart';
-import 'package:eClassify/data/model/my_review_model.dart';
-import 'package:eClassify/ui/screens/home/home_screen.dart';
 
-import 'package:eClassify/ui/screens/widgets/errors/no_data_found.dart';
-import 'package:eClassify/ui/screens/widgets/shimmerLoadingContainer.dart';
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/app_icon.dart';
-import 'package:eClassify/utils/custom_hero_animation.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/helper_utils.dart';
-import 'package:eClassify/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
@@ -631,7 +631,7 @@ class MyReviewScreenState extends State<MyReviewScreen>
 
   Widget buildItemsShimmer(BuildContext context) {
     return ListView(
-      padding: const EdgeInsets.symmetric(horizontal: sidePadding),
+      padding: EdgeInsets.symmetric(horizontal: sidePadding),
       children: [
         Row(
           children: [

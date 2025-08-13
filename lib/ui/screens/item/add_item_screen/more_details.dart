@@ -1,18 +1,19 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:eClassify/app/routes.dart';
-import 'package:eClassify/data/cubits/custom_field/fetch_custom_fields_cubit.dart';
-import 'package:eClassify/data/model/custom_field/custom_field_model.dart';
-import 'package:eClassify/data/model/item/item_model.dart';
-import 'package:eClassify/ui/screens/item/add_item_screen/custom_filed_structure/custom_field.dart';
-import 'package:eClassify/ui/screens/item/add_item_screen/select_category.dart';
-
-import 'package:eClassify/ui/screens/widgets/dynamic_field.dart';
-import 'package:eClassify/utils/cloud_state/cloud_state.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+import 'package:YallaBay/app/routes.dart';
+import 'package:YallaBay/data/cubits/custom_field/fetch_custom_fields_cubit.dart';
+import 'package:YallaBay/data/model/custom_field/custom_field_model.dart';
+import 'package:YallaBay/data/model/item/item_model.dart';
+import 'package:YallaBay/ui/screens/item/add_item_screen/custom_filed_structure/custom_field.dart';
+import 'package:YallaBay/ui/screens/item/add_item_screen/select_category.dart';
+import 'package:YallaBay/ui/screens/widgets/dynamic_field.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/cloud_state/cloud_state.dart';
+import 'package:YallaBay/utils/constant.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

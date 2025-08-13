@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'package:eClassify/data/model/item/item_model.dart';
-import 'package:eClassify/settings.dart';
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/app_icon.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+import 'package:YallaBay/data/model/item/item_model.dart';
+import 'package:YallaBay/settings.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/app_icon.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/foundation.dart' as f;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';

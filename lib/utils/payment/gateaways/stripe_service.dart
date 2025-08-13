@@ -1,9 +1,10 @@
-import 'package:eClassify/app/app_theme.dart';
-import 'package:eClassify/data/cubits/system/app_theme_cubit.dart';
-import 'package:eClassify/settings.dart';
-import 'package:eClassify/utils/constant.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/helper_utils.dart';
+
+import 'package:YallaBay/app/app_theme.dart';
+import 'package:YallaBay/data/cubits/system/app_theme_cubit.dart';
+import 'package:YallaBay/settings.dart';
+import 'package:YallaBay/utils/constant.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';

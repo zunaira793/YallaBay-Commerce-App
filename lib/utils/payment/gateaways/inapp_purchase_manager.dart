@@ -1,13 +1,14 @@
 import 'dart:async';
 
-import 'package:eClassify/data/cubits/subscription/in_app_purchase_cubit.dart';
-import 'package:eClassify/ui/screens/widgets/blurred_dialog_box.dart';
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/constant.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/helper_utils.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+
+import 'package:YallaBay/data/cubits/subscription/in_app_purchase_cubit.dart';
+import 'package:YallaBay/ui/screens/widgets/blurred_dialog_box.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/constant.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';

@@ -1,25 +1,25 @@
 import 'dart:ui' as ui;
 
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:eClassify/app/routes.dart';
-import 'package:eClassify/data/cubits/seller/fetch_seller_item_cubit.dart';
-import 'package:eClassify/data/cubits/seller/fetch_seller_ratings_cubit.dart';
-import 'package:eClassify/data/model/item/item_model.dart';
-import 'package:eClassify/data/model/seller_ratings_model.dart';
-import 'package:eClassify/ui/screens/home/home_screen.dart';
-import 'package:eClassify/ui/screens/home/widgets/home_sections_adapter.dart';
+import 'package:YallaBay/app/routes.dart';
+import 'package:YallaBay/data/cubits/seller/fetch_seller_item_cubit.dart';
+import 'package:YallaBay/data/cubits/seller/fetch_seller_ratings_cubit.dart';
+import 'package:YallaBay/data/model/item/item_model.dart';
+import 'package:YallaBay/data/model/seller_ratings_model.dart';
+import 'package:YallaBay/ui/screens/home/home_screen.dart';
+import 'package:YallaBay/ui/screens/home/widgets/home_sections_adapter.dart';
 
-import 'package:eClassify/ui/screens/widgets/errors/no_data_found.dart';
-import 'package:eClassify/ui/screens/widgets/errors/something_went_wrong.dart';
-import 'package:eClassify/ui/screens/widgets/shimmerLoadingContainer.dart';
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/app_icon.dart';
-import 'package:eClassify/utils/custom_hero_animation.dart';
-import 'package:eClassify/utils/custom_silver_grid_delegate.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/helper_utils.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+import 'package:YallaBay/ui/screens/widgets/errors/no_data_found.dart';
+import 'package:YallaBay/ui/screens/widgets/errors/something_went_wrong.dart';
+import 'package:YallaBay/ui/screens/widgets/shimmerLoadingContainer.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/app_icon.dart';
+import 'package:YallaBay/utils/custom_hero_animation.dart';
+import 'package:YallaBay/utils/custom_silver_grid_delegate.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
@@ -40,18 +40,18 @@ class SellerProfileScreen extends StatefulWidget {
     Map? arguments = routeSettings.arguments as Map?;
     return MaterialPageRoute(
         builder: (_) => MultiBlocProvider(
-              providers: [
-                BlocProvider(
-                  create: (context) => FetchSellerItemsCubit(),
-                ),
-                BlocProvider(
-                  create: (context) => FetchSellerRatingsCubit(),
-                ),
-              ],
-              child: SellerProfileScreen(
-                sellerId: arguments?['sellerId'],
-              ),
-            ));
+          providers: [
+            BlocProvider(
+              create: (context) => FetchSellerItemsCubit(),
+            ),
+            BlocProvider(
+              create: (context) => FetchSellerRatingsCubit(),
+            ),
+          ],
+          child: SellerProfileScreen(
+            sellerId: arguments?['sellerId'],
+          ),
+        ));
   }
 }
 
@@ -148,7 +148,7 @@ class SellerProfileScreenState extends State<SellerProfileScreen>
                               textDirection: Directionality.of(context),
                               child: RotatedBox(
                                 quarterTurns: Directionality.of(context) ==
-                                        ui.TextDirection.rtl
+                                    ui.TextDirection.rtl
                                     ? 2
                                     : -4,
                                 child: UiUtils.getSvg(AppIcons.arrowLeft,
@@ -163,7 +163,7 @@ class SellerProfileScreenState extends State<SellerProfileScreen>
                       pinned: true,
 
                       expandedHeight: (state.seller!.createdAt != null &&
-                              state.seller!.createdAt != '')
+                          state.seller!.createdAt != '')
                           ? context.screenHeight / 2.3
                           : context.screenHeight / 2.5,
                       backgroundColor: context.color.secondaryColor,
@@ -183,17 +183,17 @@ class SellerProfileScreenState extends State<SellerProfileScreen>
                                       borderRadius: BorderRadius.circular(45),
                                       child: state.seller!.profile != null
                                           ? UiUtils.getImage(
-                                              state.seller!.profile!,
-                                              fit: BoxFit.fill,
-                                              width: 95,
-                                              height: 95)
+                                          state.seller!.profile!,
+                                          fit: BoxFit.fill,
+                                          width: 95,
+                                          height: 95)
                                           : UiUtils.getSvg(
-                                              AppIcons.defaultPersonLogo,
-                                              color:
-                                                  context.color.territoryColor,
-                                              fit: BoxFit.none,
-                                              width: 95,
-                                              height: 95),
+                                          AppIcons.defaultPersonLogo,
+                                          color:
+                                          context.color.territoryColor,
+                                          fit: BoxFit.none,
+                                          width: 95,
+                                          height: 95),
                                     ),
                                   ),
                                   if (state.seller!.isVerified == 1)
@@ -204,7 +204,7 @@ class SellerProfileScreenState extends State<SellerProfileScreen>
                                       child: DecoratedBox(
                                         decoration: BoxDecoration(
                                             borderRadius:
-                                                BorderRadius.circular(5),
+                                            BorderRadius.circular(5),
                                             color: context.color.forthColor),
                                         child: Padding(
                                           padding: EdgeInsets.symmetric(
@@ -224,7 +224,7 @@ class SellerProfileScreenState extends State<SellerProfileScreen>
                                                   "verifiedLbl"
                                                       .translate(context),
                                                   overflow:
-                                                      TextOverflow.ellipsis,
+                                                  TextOverflow.ellipsis,
                                                   softWrap: true,
                                                   color: context
                                                       .color.secondaryColor,
@@ -271,12 +271,12 @@ class SellerProfileScreenState extends State<SellerProfileScreen>
                                         ),
                                         TextSpan(
                                           text:
-                                              '\t${state.seller!.averageRating!.toStringAsFixed(2).toString()}',
+                                          '\t${state.seller!.averageRating!.toStringAsFixed(2).toString()}',
                                           // Rating value
                                           style: TextStyle(
                                             fontSize: 16,
                                             color:
-                                                context.color.textDefaultColor,
+                                            context.color.textDefaultColor,
                                           ),
                                         ),
                                         TextSpan(
@@ -290,7 +290,7 @@ class SellerProfileScreenState extends State<SellerProfileScreen>
                                         ),
                                         TextSpan(
                                           text:
-                                              '${state.ratings.length.toString()}\t${"ratings".translate(context)}',
+                                          '${state.ratings.length.toString()}\t${"ratings".translate(context)}',
                                           // Rating count text
                                           style: TextStyle(
                                             fontSize: 16,
@@ -371,87 +371,87 @@ class SellerProfileScreenState extends State<SellerProfileScreen>
   Widget liveAdsWidget() {
     return BlocBuilder<FetchSellerItemsCubit, FetchSellerItemsState>(
         builder: (context, state) {
-      if (state is FetchSellerItemsInProgress) {
-        return buildItemsShimmer(context);
-      }
+          if (state is FetchSellerItemsInProgress) {
+            return buildItemsShimmer(context);
+          }
 
-      if (state is FetchSellerItemsFail) {
-        return Center(
-          child: CustomText(state.error),
-        );
-      }
-      if (state is FetchSellerItemsSuccess) {
-        if (state.items.isEmpty) {
-          return Center(
-            child: NoDataFound(
-              onTap: () {
-                context
-                    .read<FetchSellerItemsCubit>()
-                    .fetch(sellerId: widget.sellerId);
-              },
-            ),
-          );
-        }
-        return Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CustomText(
-                "${state.total.toString()}\t${"itemsLive".translate(context)}",
-                fontWeight: FontWeight.w600,
-                fontSize: context.font.large,
-              ),
-              Expanded(
-                child: NotificationListener<ScrollNotification>(
-                  onNotification: (ScrollNotification scrollInfo) {
-                    if (scrollInfo.metrics.pixels ==
-                        scrollInfo.metrics.maxScrollExtent) {
-                      _loadMore();
-                    }
-                    return true;
+          if (state is FetchSellerItemsFail) {
+            return Center(
+              child: CustomText(state.error),
+            );
+          }
+          if (state is FetchSellerItemsSuccess) {
+            if (state.items.isEmpty) {
+              return Center(
+                child: NoDataFound(
+                  onTap: () {
+                    context
+                        .read<FetchSellerItemsCubit>()
+                        .fetch(sellerId: widget.sellerId);
                   },
-                  child: GridView.builder(
-                    //primary: false,
+                ),
+              );
+            }
+            return Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CustomText(
+                    "${state.total.toString()}\t${"itemsLive".translate(context)}",
+                    fontWeight: FontWeight.w600,
+                    fontSize: context.font.large,
+                  ),
+                  Expanded(
+                    child: NotificationListener<ScrollNotification>(
+                      onNotification: (ScrollNotification scrollInfo) {
+                        if (scrollInfo.metrics.pixels ==
+                            scrollInfo.metrics.maxScrollExtent) {
+                          _loadMore();
+                        }
+                        return true;
+                      },
+                      child: GridView.builder(
+                        //primary: false,
 
-                    physics: NeverScrollableScrollPhysics(),
-                    padding: EdgeInsets.only(top: 10),
-                    shrinkWrap: true,
-                    // Allow GridView to fit within the space
-                    gridDelegate:
+                        physics: NeverScrollableScrollPhysics(),
+                        padding: EdgeInsets.only(top: 10),
+                        shrinkWrap: true,
+                        // Allow GridView to fit within the space
+                        gridDelegate:
                         SliverGridDelegateWithFixedCrossAxisCountAndFixedHeight(
                             crossAxisCount: 2,
                             height: MediaQuery.of(context).size.height / 3.2,
                             mainAxisSpacing: 7,
                             crossAxisSpacing: 10),
-                    itemCount: state.items.length,
-                    itemBuilder: (context, index) {
-                      ItemModel item = state.items[index];
+                        itemCount: state.items.length,
+                        itemBuilder: (context, index) {
+                          ItemModel item = state.items[index];
 
-                      return GestureDetector(
-                          onTap: () {
-                            Navigator.pushNamed(
-                              context,
-                              Routes.adDetailsScreen,
-                              arguments: {
-                                'model': item,
+                          return GestureDetector(
+                              onTap: () {
+                                Navigator.pushNamed(
+                                  context,
+                                  Routes.adDetailsScreen,
+                                  arguments: {
+                                    'model': item,
+                                  },
+                                );
                               },
-                            );
-                          },
-                          child: ItemCard(
-                            item: item,
-                          ));
-                    },
+                              child: ItemCard(
+                                item: item,
+                              ));
+                        },
+                      ),
+                    ),
                   ),
-                ),
+                  if (state.isLoadingMore) Center(child: UiUtils.progress())
+                ],
               ),
-              if (state.isLoadingMore) Center(child: UiUtils.progress())
-            ],
-          ),
-        );
-      }
-      return Container();
-    });
+            );
+          }
+          return Container();
+        });
   }
 
   Map<int, int> getRatingCounts(List<UserRatings> userRatings) {
@@ -509,72 +509,72 @@ class SellerProfileScreenState extends State<SellerProfileScreen>
   Widget ratingsListWidget() {
     return BlocBuilder<FetchSellerRatingsCubit, FetchSellerRatingsState>(
         builder: (context, state) {
-      if (state is FetchSellerRatingsInProgress) {
-        return ListView.builder(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-          itemCount: 10,
-          itemBuilder: (context, index) {
-            return buildRatingsShimmer(context);
-          },
-        );
-      }
-
-      if (state is FetchSellerRatingsFail) {
-        return Center(
-          child: CustomText(state.error),
-        );
-      }
-      if (state is FetchSellerRatingsSuccess) {
-        if (state.ratings.isEmpty) {
-          return Center(
-            child: NoDataFound(
-              onTap: () {
-                context
-                    .read<FetchSellerRatingsCubit>()
-                    .fetch(sellerId: widget.sellerId);
+          if (state is FetchSellerRatingsInProgress) {
+            return ListView.builder(
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+              itemCount: 10,
+              itemBuilder: (context, index) {
+                return buildRatingsShimmer(context);
               },
-            ),
-          );
-        }
+            );
+          }
 
-        return Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Average Rating & Breakdown Section
-              if (state.seller != null)
-                _buildSellerSummary(state.seller!, state.total, state.ratings),
-
-              Expanded(
-                child: NotificationListener<ScrollNotification>(
-                  onNotification: (ScrollNotification scrollInfo) {
-                    if (scrollInfo.metrics.pixels ==
-                        scrollInfo.metrics.maxScrollExtent) {
-                      _reviewLoadMore();
-                    }
-                    return true;
+          if (state is FetchSellerRatingsFail) {
+            return Center(
+              child: CustomText(state.error),
+            );
+          }
+          if (state is FetchSellerRatingsSuccess) {
+            if (state.ratings.isEmpty) {
+              return Center(
+                child: NoDataFound(
+                  onTap: () {
+                    context
+                        .read<FetchSellerRatingsCubit>()
+                        .fetch(sellerId: widget.sellerId);
                   },
-                  child: ListView.builder(
-                    shrinkWrap: true,
-                    padding: EdgeInsets.zero,
-                    physics: NeverScrollableScrollPhysics(),
-                    itemCount: state.ratings.length,
-                    itemBuilder: (context, index) {
-                      UserRatings ratings = state.ratings[index];
-
-                      return _buildReviewCard(ratings, index);
-                    },
-                  ),
                 ),
+              );
+            }
+
+            return Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Average Rating & Breakdown Section
+                  if (state.seller != null)
+                    _buildSellerSummary(state.seller!, state.total, state.ratings),
+
+                  Expanded(
+                    child: NotificationListener<ScrollNotification>(
+                      onNotification: (ScrollNotification scrollInfo) {
+                        if (scrollInfo.metrics.pixels ==
+                            scrollInfo.metrics.maxScrollExtent) {
+                          _reviewLoadMore();
+                        }
+                        return true;
+                      },
+                      child: ListView.builder(
+                        shrinkWrap: true,
+                        padding: EdgeInsets.zero,
+                        physics: NeverScrollableScrollPhysics(),
+                        itemCount: state.ratings.length,
+                        itemBuilder: (context, index) {
+                          UserRatings ratings = state.ratings[index];
+
+                          return _buildReviewCard(ratings, index);
+                        },
+                      ),
+                    ),
+                  ),
+                  if (state.isLoadingMore) UiUtils.progress()
+                ],
               ),
-              if (state.isLoadingMore) UiUtils.progress()
-            ],
-          ),
-        );
-      }
-      return Container();
-    });
+            );
+          }
+          return Container();
+        });
   }
 
 // Rating summary widget (similar to the top section of your image)
@@ -601,14 +601,14 @@ class SellerProfileScreenState extends State<SellerProfileScreen>
                             .textTheme
                             .headlineMedium!
                             .copyWith(
-                                color: context.color.textDefaultColor,
-                                fontWeight: FontWeight.bold)),
+                            color: context.color.textDefaultColor,
+                            fontWeight: FontWeight.bold)),
                     CustomRatingBar(
                       rating: seller.averageRating!,
                       itemSize: 25.0,
                       activeColor: Colors.amber,
                       inactiveColor:
-                          context.color.textLightColor.withValues(alpha: 0.1),
+                      context.color.textLightColor.withValues(alpha: 0.1),
                       allowHalfRating: true,
                     ),
                     SizedBox(height: 3),
@@ -717,22 +717,22 @@ class SellerProfileScreenState extends State<SellerProfileScreen>
           children: [
             ratings.buyer!.profile == "" || ratings.buyer!.profile == null
                 ? CircleAvatar(
-                    backgroundColor: context.color.territoryColor,
-                    child: SvgPicture.asset(
-                      AppIcons.profile,
-                      colorFilter: ColorFilter.mode(
-                          context.color.buttonColor, BlendMode.srcIn),
-                    ),
-                  )
+              backgroundColor: context.color.territoryColor,
+              child: SvgPicture.asset(
+                AppIcons.profile,
+                colorFilter: ColorFilter.mode(
+                    context.color.buttonColor, BlendMode.srcIn),
+              ),
+            )
                 : CustomImageHeroAnimation(
-                    type: CImageType.Network,
-                    image: ratings.buyer!.profile,
-                    child: CircleAvatar(
-                      backgroundImage: CachedNetworkImageProvider(
-                        ratings.buyer!.profile!,
-                      ),
-                    ),
-                  ),
+              type: CImageType.Network,
+              image: ratings.buyer!.profile,
+              child: CircleAvatar(
+                backgroundImage: CachedNetworkImageProvider(
+                  ratings.buyer!.profile!,
+                ),
+              ),
+            ),
             Expanded(
               child: Column(
                 spacing: 5,
@@ -846,7 +846,7 @@ class SellerProfileScreenState extends State<SellerProfileScreen>
             spacing: 10,
             children: List.generate(
               2,
-              (index) => getShimmer(),
+                  (index) => getShimmer(),
             )),
         SizedBox(
           height: 5,
@@ -855,7 +855,7 @@ class SellerProfileScreenState extends State<SellerProfileScreen>
             spacing: 10,
             children: List.generate(
               2,
-              (index) => getShimmer(),
+                  (index) => getShimmer(),
             )),
       ],
     );

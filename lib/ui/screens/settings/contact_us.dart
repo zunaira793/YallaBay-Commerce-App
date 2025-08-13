@@ -1,19 +1,18 @@
 import 'dart:ui' as ui;
 
-import 'package:eClassify/app/app_theme.dart';
-import 'package:eClassify/data/cubits/company_cubit.dart';
-import 'package:eClassify/data/cubits/profile_setting_cubit.dart';
-import 'package:eClassify/data/cubits/system/app_theme_cubit.dart';
-import 'package:eClassify/data/helper/widgets.dart';
-
-import 'package:eClassify/ui/screens/widgets/blurred_dialog_box.dart';
-import 'package:eClassify/ui/screens/widgets/custom_text_form_field.dart';
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/api.dart';
-import 'package:eClassify/utils/app_icon.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+import 'package:YallaBay/app/app_theme.dart';
+import 'package:YallaBay/data/cubits/company_cubit.dart';
+import 'package:YallaBay/data/cubits/profile_setting_cubit.dart';
+import 'package:YallaBay/data/cubits/system/app_theme_cubit.dart';
+import 'package:YallaBay/data/helper/widgets.dart';
+import 'package:YallaBay/ui/screens/widgets/blurred_dialog_box.dart';
+import 'package:YallaBay/ui/screens/widgets/custom_text_form_field.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/api.dart';
+import 'package:YallaBay/utils/app_icon.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';

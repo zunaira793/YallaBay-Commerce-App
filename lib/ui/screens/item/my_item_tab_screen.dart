@@ -1,22 +1,22 @@
-import 'package:eClassify/app/routes.dart';
-import 'package:eClassify/data/cubits/item/fetch_my_item_cubit.dart';
-import 'package:eClassify/data/helper/designs.dart';
-import 'package:eClassify/data/model/item/item_model.dart';
-import 'package:eClassify/ui/screens/home/home_screen.dart';
-import 'package:eClassify/ui/screens/widgets/errors/no_data_found.dart';
-import 'package:eClassify/ui/screens/widgets/errors/no_internet.dart';
-import 'package:eClassify/ui/screens/widgets/errors/something_went_wrong.dart';
-import 'package:eClassify/ui/screens/widgets/promoted_widget.dart';
-import 'package:eClassify/ui/screens/widgets/shimmerLoadingContainer.dart';
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/api.dart';
-import 'package:eClassify/utils/app_icon.dart';
-import 'package:eClassify/utils/cloud_state/cloud_state.dart';
-import 'package:eClassify/utils/constant.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/hive_utils.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+import 'package:YallaBay/app/routes.dart';
+import 'package:YallaBay/data/cubits/item/fetch_my_item_cubit.dart';
+import 'package:YallaBay/data/helper/designs.dart';
+import 'package:YallaBay/data/model/item/item_model.dart';
+import 'package:YallaBay/ui/screens/home/home_screen.dart';
+import 'package:YallaBay/ui/screens/widgets/errors/no_data_found.dart';
+import 'package:YallaBay/ui/screens/widgets/errors/no_internet.dart';
+import 'package:YallaBay/ui/screens/widgets/errors/something_went_wrong.dart';
+import 'package:YallaBay/ui/screens/widgets/promoted_widget.dart';
+import 'package:YallaBay/ui/screens/widgets/shimmerLoadingContainer.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/api.dart';
+import 'package:YallaBay/utils/app_icon.dart';
+import 'package:YallaBay/utils/cloud_state/cloud_state.dart';
+import 'package:YallaBay/utils/constant.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/hive_utils.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
@@ -70,7 +70,7 @@ class _MyItemTabState extends CloudState<MyItemTab> {
     return ListView.separated(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      padding: const EdgeInsets.symmetric(
+      padding:  EdgeInsets.symmetric(
         vertical: 10 + defaultPadding,
         horizontal: defaultPadding,
       ),
@@ -284,7 +284,7 @@ class _MyItemTabState extends CloudState<MyItemTab> {
                     physics: const AlwaysScrollableScrollPhysics(),
                     shrinkWrap: true,
                     controller: _pageScrollController,
-                    padding: const EdgeInsets.symmetric(
+                    padding:  EdgeInsets.symmetric(
                       horizontal: sidePadding,
                       vertical: 8,
                     ),

@@ -1,8 +1,9 @@
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/custom_text.dart';
+
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 
-import 'package:eClassify/utils/extensions/extensions.dart';
 
 enum PromoteCardType { text, icon }
 

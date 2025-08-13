@@ -1,6 +1,6 @@
 // ignore_for_file: file_names
 
-import 'package:eClassify/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 

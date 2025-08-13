@@ -1,7 +1,8 @@
+import 'package:YallaBay/data/model/data_output.dart';
+import 'package:YallaBay/data/model/location/free_api_location_model.dart';
+import 'package:YallaBay/data/repositories/location/free_api_location_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:eClassify/data/model/location/free_api_location_model.dart';
-import 'package:eClassify/data/repositories/location/free_api_location_repository.dart';
-import 'package:eClassify/data/model/data_output.dart';
+
 
 abstract class FreeApiLocationState {}
 

@@ -1,5 +1,6 @@
-import 'package:eClassify/data/model/home/home_screen_section.dart';
-import 'package:eClassify/data/repositories/home/home_repository.dart';
+
+import 'package:YallaBay/data/model/home/home_screen_section.dart';
+import 'package:YallaBay/data/repositories/home/home_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 abstract class FetchHomeScreenState {}

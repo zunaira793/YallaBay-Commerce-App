@@ -1,27 +1,26 @@
 // ignore_for_file: file_names
 
 import 'dart:async';
-
-import 'package:eClassify/app/routes.dart';
-import 'package:eClassify/data/cubits/chat/get_buyer_chat_users_cubit.dart';
-import 'package:eClassify/data/cubits/chat/get_seller_chat_users_cubit.dart';
-import 'package:eClassify/data/cubits/chat/load_chat_messages.dart';
-import 'package:eClassify/data/cubits/chat/send_message.dart';
-import 'package:eClassify/data/cubits/item/fetch_my_item_cubit.dart';
-import 'package:eClassify/data/model/chat/chat_message_modal.dart';
-import 'package:eClassify/data/model/chat/chat_user_model.dart';
-import 'package:eClassify/data/model/data_output.dart';
-import 'package:eClassify/data/model/item/item_model.dart';
-import 'package:eClassify/data/repositories/item/item_repository.dart';
-import 'package:eClassify/ui/screens/chat/chat_audio/widgets/chat_widget.dart';
-import 'package:eClassify/ui/screens/chat/chat_screen.dart';
-import 'package:eClassify/ui/screens/item/my_items_screen.dart';
-import 'package:eClassify/ui/screens/main_activity.dart';
-import 'package:eClassify/utils/constant.dart';
-import 'package:eClassify/utils/helper_utils.dart';
-import 'package:eClassify/utils/hive_utils.dart';
-import 'package:eClassify/utils/notification/awsome_notification.dart';
-import 'package:eClassify/utils/notification/chat_message_handler.dart';
+import 'package:YallaBay/app/routes.dart';
+import 'package:YallaBay/data/cubits/chat/get_buyer_chat_users_cubit.dart';
+import 'package:YallaBay/data/cubits/chat/get_seller_chat_users_cubit.dart';
+import 'package:YallaBay/data/cubits/chat/load_chat_messages.dart';
+import 'package:YallaBay/data/cubits/chat/send_message.dart';
+import 'package:YallaBay/data/cubits/item/fetch_my_item_cubit.dart';
+import 'package:YallaBay/data/model/chat/chat_message_modal.dart';
+import 'package:YallaBay/data/model/chat/chat_user_model.dart';
+import 'package:YallaBay/data/model/data_output.dart';
+import 'package:YallaBay/data/model/item/item_model.dart';
+import 'package:YallaBay/data/repositories/item/item_repository.dart';
+import 'package:YallaBay/ui/screens/chat/chat_audio/widgets/chat_widget.dart';
+import 'package:YallaBay/ui/screens/chat/chat_screen.dart';
+import 'package:YallaBay/ui/screens/item/my_items_screen.dart';
+import 'package:YallaBay/ui/screens/main_activity.dart';
+import 'package:YallaBay/utils/constant.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
+import 'package:YallaBay/utils/hive_utils.dart';
+import 'package:YallaBay/utils/notification/awsome_notification.dart';
+import 'package:YallaBay/utils/notification/chat_message_handler.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';

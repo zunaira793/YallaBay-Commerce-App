@@ -1,6 +1,7 @@
-import 'package:eClassify/data/model/data_output.dart';
-import 'package:eClassify/data/model/safety_tips_model.dart';
-import 'package:eClassify/data/repositories/safety_tips_repository.dart';
+
+import 'package:YallaBay/data/model/data_output.dart';
+import 'package:YallaBay/data/model/safety_tips_model.dart';
+import 'package:YallaBay/data/repositories/safety_tips_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 abstract class FetchSafetyTipsListState {}

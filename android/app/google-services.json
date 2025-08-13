@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "437882504807",
-    "project_id": "eclassify-3f636",
-    "storage_bucket": "eclassify-3f636.firebasestorage.app"
+    "project_number": "1042331020379",
+    "project_id": "yallabay-4e4b1",
+    "storage_bucket": "yallabay-4e4b1.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:437882504807:android:2bf0badb1c21a72d0576c2",
+        "mobilesdk_app_id": "1:1042331020379:android:799901e4240773da92637e",
         "android_client_info": {
-          "package_name": "com.eclassify.wrteam"
+          "package_name": "com.yallabay.marketplace"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDKM-P3oiwtNozzEe6Q44TEGZrMf-jF4h4"
+          "current_key": "AIzaSyB26w33FX2bdn96boXSuZMBnrFXnxz2n7g"
         }
       ],
       "services": {

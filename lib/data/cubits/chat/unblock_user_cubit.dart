@@ -1,6 +1,6 @@
 
 
-import 'package:eClassify/data/repositories/chat_repository.dart';
+import 'package:YallaBay/data/repositories/chat_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class UnblockUserState {}

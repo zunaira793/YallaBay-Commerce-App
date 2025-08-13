@@ -1,9 +1,9 @@
 // ignore_for_file: depend_on_referenced_packages
 
+import 'package:YallaBay/app/app_theme.dart';
+import 'package:YallaBay/utils/hive_utils.dart';
 import 'package:bloc/bloc.dart';
 
-import 'package:eClassify/app/app_theme.dart';
-import 'package:eClassify/utils/hive_utils.dart';
 
 class AppThemeCubit extends Cubit<ThemeState> {
   AppThemeCubit() : super(ThemeState(AppTheme.light));

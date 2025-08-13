@@ -1,6 +1,7 @@
-import 'package:eClassify/data/model/data_output.dart';
-import 'package:eClassify/data/model/location/city_model.dart';
-import 'package:eClassify/data/repositories/location/cities_repository.dart';
+
+import 'package:YallaBay/data/model/data_output.dart';
+import 'package:YallaBay/data/model/location/city_model.dart';
+import 'package:YallaBay/data/repositories/location/cities_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 abstract class FetchCitiesState {}

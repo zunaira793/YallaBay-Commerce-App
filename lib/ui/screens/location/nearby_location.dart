@@ -1,18 +1,18 @@
 import 'dart:developer';
 import 'dart:io';
 import 'dart:ui' as ui;
-import 'package:eClassify/data/cubits/location/fetch_paid_api_location_cubit.dart';
-import 'package:eClassify/ui/screens/home/home_screen.dart';
-import 'package:eClassify/ui/screens/item/add_item_screen/confirm_location_screen.dart';
-import 'package:eClassify/ui/screens/location/locationHelperWidget.dart';
 
-import 'package:eClassify/ui/theme/theme.dart';
-import 'package:eClassify/utils/constant.dart';
-import 'package:eClassify/utils/custom_text.dart';
-import 'package:eClassify/utils/extensions/extensions.dart';
-import 'package:eClassify/utils/helper_utils.dart';
-import 'package:eClassify/utils/hive_utils.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+import 'package:YallaBay/data/cubits/location/fetch_paid_api_location_cubit.dart';
+import 'package:YallaBay/ui/screens/home/home_screen.dart';
+import 'package:YallaBay/ui/screens/item/add_item_screen/confirm_location_screen.dart';
+import 'package:YallaBay/ui/screens/location/locationHelperWidget.dart';
+import 'package:YallaBay/ui/theme/theme.dart';
+import 'package:YallaBay/utils/constant.dart';
+import 'package:YallaBay/utils/custom_text.dart';
+import 'package:YallaBay/utils/extensions/extensions.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
+import 'package:YallaBay/utils/hive_utils.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -303,7 +303,7 @@ class NearbyLocationScreenState extends State<NearbyLocationScreen>
           thickness: 1.5,
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: sidePadding),
+          padding: EdgeInsets.symmetric(horizontal: sidePadding),
           child: Row(
             spacing: 16,
             mainAxisSize: MainAxisSize.min,

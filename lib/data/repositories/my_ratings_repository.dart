@@ -1,6 +1,7 @@
-import 'package:eClassify/utils/api.dart';
-import 'package:eClassify/data/model/data_output.dart';
-import 'package:eClassify/data/model/my_review_model.dart';
+
+import 'package:YallaBay/data/model/data_output.dart';
+import 'package:YallaBay/data/model/my_review_model.dart';
+import 'package:YallaBay/utils/api.dart';
 
 class MyRatingsRepository {
   Future<DataOutput<MyReviewModel>> fetchMyRatingsAllRatings(

@@ -1,11 +1,11 @@
 
 import 'dart:convert';
 
-import 'package:eClassify/data/helper/custom_exception.dart';
-import 'package:eClassify/data/model/home_slider.dart';
-import 'package:eClassify/settings.dart';
-import 'package:eClassify/utils/api.dart';
-import 'package:eClassify/utils/network/network_availability.dart';
+import 'package:YallaBay/data/helper/custom_exception.dart';
+import 'package:YallaBay/data/model/home_slider.dart';
+import 'package:YallaBay/settings.dart';
+import 'package:YallaBay/utils/api.dart';
+import 'package:YallaBay/utils/network/network_availability.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

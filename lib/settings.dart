@@ -1,4 +1,4 @@
-import 'package:eClassify/utils/helper_utils.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class PaymentGateway {
@@ -29,8 +29,8 @@ class AppSettings {
   /// Basic Settings
 
 
-  static const String applicationName = 'eClassify';
-  static const String packageName = 'com.eclassify.wrteam';
+  static const String applicationName = 'YallaBay';
+  static const String packageName = 'com.yallabay.marketplace';
 
   //PLEASE ADD WITH https://
   static const String hostUrl = "https://admin.yallabay.com";

@@ -2,8 +2,9 @@
 
 import 'dart:developer';
 
-import 'package:eClassify/utils/api.dart';
-import 'package:eClassify/utils/constant.dart';
+
+import 'package:YallaBay/utils/api.dart';
+import 'package:YallaBay/utils/constant.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 abstract class FetchLanguageState {}

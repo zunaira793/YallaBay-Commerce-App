@@ -1,16 +1,17 @@
 import 'dart:async';
 
-import 'package:eClassify/app/routes.dart';
-import 'package:eClassify/data/cubits/slider_cubit.dart';
-import 'package:eClassify/data/helper/widgets.dart';
-import 'package:eClassify/data/model/category_model.dart';
-import 'package:eClassify/data/model/data_output.dart';
-import 'package:eClassify/data/model/home_slider.dart';
-import 'package:eClassify/data/model/item/item_model.dart';
-import 'package:eClassify/data/repositories/item/item_repository.dart';
-import 'package:eClassify/ui/screens/home/home_screen.dart';
-import 'package:eClassify/utils/helper_utils.dart';
-import 'package:eClassify/utils/ui_utils.dart';
+
+import 'package:YallaBay/app/routes.dart';
+import 'package:YallaBay/data/cubits/slider_cubit.dart';
+import 'package:YallaBay/data/helper/widgets.dart';
+import 'package:YallaBay/data/model/category_model.dart';
+import 'package:YallaBay/data/model/data_output.dart';
+import 'package:YallaBay/data/model/home_slider.dart';
+import 'package:YallaBay/data/model/item/item_model.dart';
+import 'package:YallaBay/data/repositories/item/item_repository.dart';
+import 'package:YallaBay/ui/screens/home/home_screen.dart';
+import 'package:YallaBay/utils/helper_utils.dart';
+import 'package:YallaBay/utils/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:url_launcher/url_launcher.dart' as urllauncher;
@@ -91,7 +92,7 @@ class _SliderWidgetState extends State<SliderWidget>
                     sliderTap(homeSlider);
                   },
                   child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: sidePadding),
+                    margin:  EdgeInsets.symmetric(horizontal: sidePadding),
                     width: MediaQuery.of(context).size.width - 16,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),

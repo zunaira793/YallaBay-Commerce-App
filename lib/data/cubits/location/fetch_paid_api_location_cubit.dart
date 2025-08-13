@@ -1,6 +1,7 @@
+import 'package:YallaBay/data/model/location/paid_api_location_model.dart';
+import 'package:YallaBay/data/repositories/location/paid_api_location_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:eClassify/data/model/location/paid_api_location_model.dart';
-import 'package:eClassify/data/repositories/location/paid_api_location_repository.dart';
+
 
 abstract class PaidApiLocationState {}
 

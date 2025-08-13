@@ -1,8 +1,9 @@
+import 'package:YallaBay/data/model/chat/chat_user_model.dart';
+import 'package:YallaBay/data/model/data_output.dart';
+import 'package:YallaBay/ui/screens/chat/chat_audio/widgets/chat_widget.dart';
+import 'package:YallaBay/utils/api.dart';
 import 'package:dio/dio.dart';
-import 'package:eClassify/data/model/chat/chat_user_model.dart';
-import 'package:eClassify/data/model/data_output.dart';
-import 'package:eClassify/ui/screens/chat/chat_audio/widgets/chat_widget.dart';
-import 'package:eClassify/utils/api.dart';
+
 import 'package:flutter/material.dart';
 
 class ChatRepository {
